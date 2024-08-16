@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Space Grotesk", sans-serif;
+        }
+
+        h2,
+        button {
+            margin: 12px;
+            padding: 14px;
+            text-align: center;
+        }
+
+
+        body {
+            height: 815px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(116, 113, 113);
+        }
+
+        .form-container {
+            /* border: 2px solid red; */
+            height: 366px;
+            width: 309px;
+            background-color: whitesmoke;
+            box-shadow: 5px 5px rgb(105, 94, 94);
+            opacity: 0.9;
+
+        }
+
+        .box {
+            width: 150%;
+            height: 26px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+
+            padding: 20px;
+
+            /* align-items: center; */
+        }
+
+        #submit {
+            margin: 0px 110px 0px;
+            width: 110px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="form-container">
+
+        <h2>Registration Form</h2>
+        <div class="container">
+
+            <form action="/submit" method="post">
+                <label for="Name">Name</label><br>
+                <input type="text" class="box" id="name" name="Name" autofocus><br><br>
+                <label for="Email">Email</label><br>
+                <input type="text" class="box" id="email" name="Email"><br><br>
+                <label for="Password">Password</label><br>
+                <input type="text" class="box" id="password" name="Password">
+        </div>
+        <button type="submit" id="submit">Submit</button>
+        </form>
+        
+    </div>
+
+</body>
+
+</html>
